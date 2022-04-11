@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (min-width: 320px) {
+  body {
+    margin: 0;
+    background-color: black;
+    color: white;
+  }
+
+  .container-grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .header_img {
+    align-items: center;
+  }
+  .header_img img {
+    text-align: center;
+    width: 60%;
+  }
+
+  .header {
+    text-align: center;
+    grid-area: header;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .TITULO_HEADER {
+    font-weight: bold;
+    font-size: 150%;
+
+    color: aliceblue;
+    padding: 0.1rem 0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  /* NAV SIN ESTILO */
+  .navbar {
+    width: 100%;
+    list-style-type: none;
+  }
+
+  .navlink {
+    font-size: 100%;
+    padding: 0.5rem;
+    height: 3rem;
+    align-content: center;
+  }
+
+  main {
+    padding: 0.5rem 2rem;
+    margin-top: 2.5rem;
+    color: white;
+    text-align: center;
+    grid-area: main;
+  }
+
+  main h1 {
+    padding: 0 0 0.5rem 0;
+  }
+
+  main p {
+    font-weight: 800;
+  }
+
+  .TITULO_SERVICIO {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 2px dashed #e1aa43;
+  }
+  .TIPOS_VIAJE {
+    margin-top: 1rem;
+  }
+  .TIPOS_VIAJE img {
+    width: 100%;
+    border: 3px solid #ffffff;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .TIPOS_VIAJE fieldset {
+    border-radius: 2rem;
+    border: 3px solid white;
+  }
+
+  .TITULOFAQ {
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: larger;
+    color: white;
+  }
+  .TITULOFAQ1 {
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: larger;
+    color: rgb(241, 221, 66);
+  }
+  .Q1 {
+    color: white;
+  }
+  .Q2 {
+    color: white;
+  }
+  .Q3 {
+    color: white;
+  }
+  .Q4 {
+    color: white;
+  }
+
+  .MAIN_FORM {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  .CONTACTO {
+    border: 2px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+  }
+  .tituloform {
+    text-align: center;
+    margin-left: 7rem;
+  }
+
+  hr {
+    color: #e1aa43;
+  }
+  .img_descarga {
+    padding: 2rem 2rem;
+  }
+  .img_descarga img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .MAIN_NOSOTROS img {
+    margin: 1rem 0rem;
+    width: 15rem;
+    border: 2px double #e1aa43;
+  }
+  .APP_IMG {
+    padding-top: 0.5rem;
+  }
+
+  .button {
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    background-color: rgb(119, 35, 35);
+    padding: 1.5rem;
+    border-radius: 120px;
+    font-family: inherit;
+    font-size: 20px;
+  }
+
+  .games_class {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    grid-area: footer;
+  }
+
+  .footer_icons {
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+  .footer_icons img {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px 18px;
+    margin: 0.5rem 0;
+  }
+
+  .seguinos {
+    font-family: inherit;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    color: #dadada;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    background-size: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+
+  .header {
+    top: 0;
+    position: sticky;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_descarga {
+    padding: 2rem 2rem;
+  }
+  .img_descarga img {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer_icons {
+    text-align: center;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+  .footer_icons img {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px 18px;
+    margin: 0.5rem 0;
+  }
+
+  .header_img img {
+    text-align: left;
+    width: 22%;
+  }
+
+  .header_img {
+    border: none;
+  }
+
+  .navbar li {
+    border: none;
+  }
+
+  .navbar {
+    width: 100%;
+    list-style-type: none;
+    display: inline-flex;
+    border: none;
+  }
+  .navlink {
+    padding-right: 1rem;
+  }
+
+  .games_class {
+    margin: 2rem 12rem;
+  }
+
+  .footer {
+    grid-area: footer;
+    width: 100%;
+  }
+
+  .footer img {
+    width: 10%;
+  }
+  .MAIN_SERVICIO {
+    vertical-align: middle;
+    padding: 0.5rem 5rem;
+  }
+  .MAIN {
+    grid-area: main;
+  }
+  .MAIN_FORM {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5rem 5rem;
+  }
+  .CONTACTO {
+    border: 2px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+  }
+  .tituloform {
+    text-align: center;
+    margin-left: 15rem;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+  .TODOELFAQ {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    top: 0;
+    position: sticky;
+    color: white;
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    padding: 0 2rem 0 0;
+    margin: 0;
+  }
+
+  .header_img img {
+    padding-top: 0;
+    width: 20%;
+  }
+
+  .TITULO_HEADER {
+    font-weight: 400;
+    font-size: larger;
+    padding-right: 30rem;
+  }
+
+  .navlink {
+    font-weight: 400;
+    font-size: large;
+  }
+
+  .main h1 {
+    font-size: 4rem;
+    padding: 1rem 1rem;
+    font-weight: 500;
+  }
+  .main p {
+    font-size: 1.5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    font-weight: 300;
+  }
+  .main img {
+    width: 55%;
+    padding: 3rem 0;
+  }
+  .button {
+    padding: 3rem 2rem;
+    width: 30rem;
+  }
+
+  .section_games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .games_class {
+    padding-top: 1rem;
+    margin: 1rem 20rem;
+  }
+  .footer {
+    grid-area: footer;
+    width: 100%;
+  }
+
+  .footer img {
+    width: 6%;
+  }
+
+  .MAIN_NOSOTROS {
+    padding: 0 12rem;
+  }
+
+  .MAIN_NOSOTROS img {
+    width: 30rem;
+  }
+  .MAIN_NOSOTROS p {
+    font-size: 1.5rem;
+  }
+  .MAIN_SERVICIO {
+    padding: 1rem 14rem;
+  }
+  .TITULO_SERVICIO p {
+    font-size: 2rem;
+  }
+  .TIPOS_VIAJE {
+    padding: 0.5rem 0;
+  }
+  .TIPOS_VIAJE p {
+    font-weight: 900;
+    padding: 1rem 5rem;
+  }
+  .TIPOS_VIAJE fieldset {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0 3rem;
+  }
+  .TODOELFAQ {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+  }
+  .MAIN_FORM {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 4rem 20rem;
+  }
+  .CONTACTO {
+    border: 3px dashed #e1aa43;
+    width: 100%;
+    text-align: center;
+  }
+  .tituloform {
+    text-align: center;
+    margin-left: 12.5rem;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-bottom: 1rem;
+  }
+}
